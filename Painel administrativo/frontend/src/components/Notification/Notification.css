@@ -1,0 +1,27 @@
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.toast{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    padding:14px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    z-index: 20;
+    animation: deslize 0.25s ease;
+}
+@keyframes deslize{
+    from{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

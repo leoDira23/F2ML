@@ -1,0 +1,26 @@
+npm create vite@latest live-react -- -- template react
+
+npm i - > forçar atualizações de pacotes
+npm run dev
+
+react serve para fazer renderizações frontend
+
+enbebed jS
+
+ejs
+
+<StrictMode> evitar falhas com tipagem
+
+renderiza pelo root do index
+
+ao renderizar um componente, temos que começar a usar letra maiuscula na primeira letra, tanto ao chamar o componente, como na função
+
+import {useState} from "react"  -> alterar estado de algum componente ou elemento
+
+dá pra utilizar um componente dentro de outro componente
+
+fechamento  de tag html -> </body>
+
+fechamento de componente -> <Card/>
+
+vetor.map ??'

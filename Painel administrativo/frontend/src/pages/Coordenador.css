@@ -1,0 +1,124 @@
+*, :after, :before, ::backdrop {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(110 106 221);
+    padding-bottom: 30px;
+}
+
+.main{
+  padding-block: 25px 25px;
+  padding-inline: 50px 50px;
+  box-sizing: border-box;
+    
+    height: 100vh;
+    width: 100%;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 40px;
+
+    background-color: rgb(110 106 221);
+
+}
+.center{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.modern-table thead {
+  background: #f1f3f6;
+}
+
+.modern-table th,
+.modern-table td {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.modern-table th {
+  font-weight: 600;
+  color: #333;
+}
+
+.modern-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.modern-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.modern-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* Status badges */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #e6f7ee;
+  color: #1a7f4b;
+}
+
+.status.inactive {
+  background: #fdecea;
+  color: #b42318;
+}
+
+/* 🔹 Responsividade mobile */
+@media (max-width: 768px) {
+  .modern-table thead {
+    display: none;
+  }
+
+  .modern-table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .modern-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+  }
+
+  .modern-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #666;
+  }
+}

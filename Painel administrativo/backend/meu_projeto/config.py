@@ -1,0 +1,1 @@
+API_KEY_VALOR = "tPmAT5Ab3j7F9"

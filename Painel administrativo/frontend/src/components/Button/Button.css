@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    font-family: ui-sans-serif, system-ui, sans-serif, 
+                 "Apple Color Emoji", "Segoe UI Emoji", 
+                 "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base dos botões */
+.btn {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Botão de navegação */
+.btn-nav {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    border-radius: 10px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+}
+
+.btn-nav:hover {
+    background-color: #D1D5DB;
+    color: #1F2937;
+}
+
+.btn-nav.active {
+    background-color: #5B6CFF;
+    color: white;
+    border-color: #5B6CFF;
+}
+
+/* Botão primário azul */
+.btn-blue {
+    background-color: #5B6CFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-blue:hover {
+    background-color: #4a5de0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Botão secundário branco */
+.btn-white {
+    background-color: #F3F4F6;
+    color: #1F2937;
+    border: 1px solid #E5E7EB;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.btn-white:hover {
+    background-color: #EEF2FF;
+    color: #5B6CFF;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Botão grande (cards ou grids) */
+.btn-big {
+    background-color: #EEF2FF;
+    color: #1F2937;
+    border: 1px solid #E0E7FF;
+    padding: 24px 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    transition: 0.2s all ease-in-out;
+}
+
+.btn-big:hover {
+    background-color: #5B6CFF;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Grid */
+.grid {
+    width: 45%;
+    height: 100%;
+    padding: 5px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 410px) {
+    .btn-big {
+        width: 80%;
+        padding: 12px 8px;
+        gap: 5px;
+    }
+
+    .btn-big p {
+        display: none;
+    }
+
+    .grid {
+        width: 100%;
+    }
+}

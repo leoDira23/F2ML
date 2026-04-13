@@ -1,0 +1,50 @@
+:root{
+        --text: #000; 
+        --text-muted:#c3c3c3; 
+        --text-white:#fff;
+}
+
+
+.textColorBk{
+    color: var(--text);
+}
+       
+.textColorWh{
+    color: var(--text-white);
+}
+        
+.textColorMuted{
+    color: var(--text-muted);
+}
+
+
+.textSizeXSm{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.textSizeSm{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(1.25 / .875);
+}
+
+.textSizeDf{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+}
+        
+.textSizeMd{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+    
+.textSizeBg{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+}

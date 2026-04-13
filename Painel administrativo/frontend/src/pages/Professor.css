@@ -1,0 +1,40 @@
+*, :after, :before, ::backdrop {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  #4A90E2;
+    padding-bottom: 30px;
+}
+
+.main{
+    padding-block: 25px 25px;
+    padding-inline: 50px 50px;
+    box-sizing: border-box;
+    
+    height: 100vh;
+    width: 100%;
+
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    gap: 40px;
+
+    background-color:  #97989c;
+
+}
+
+.center{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 5px;
+}
+
