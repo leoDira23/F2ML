@@ -8,11 +8,11 @@
          url('/src/fonts/Roboto/Roboto-MediumItalic.ttf') format('ttf');/*fonte italica (500)*/
 }
 
-/*Definições globais*/
+
 *{
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    padding: 0; /*isso tira os paddings padrões dos elementos html*/
-    margin: 0; /*mesma cena de cima com margin*/
+    padding: 0; 
+    margin: 0; 
 }
 
 
@@ -25,6 +25,7 @@ border-radius: 16px;
 width: 100%;
 }
 
+
 .card-grid{
 width: 100%;
 display: grid;
@@ -36,7 +37,7 @@ align-items: center;
 }
 
 .card-default{
-    background-color: #FFFFFF;
+    background-color: white;
     color: #1F2937;
 
     display: flex;

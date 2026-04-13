@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import Admin from "./pages/Admin";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Coordenador from "./pages/Coordenador";

@@ -16,7 +16,7 @@ export default function Login() {
 const handleLogin = async (e) => {
   e.preventDefault();
 
-  // 🔥 BLOQUEIO IMEDIATO
+  // BLOQUEIO IMEDIATO
   if (loading) return;
 
   setLoading(true);
@@ -57,7 +57,7 @@ const handleLogin = async (e) => {
     }
 
   } catch (error) {
-    setErrorMessage("Servidor não responde: " + error.message);
+    setErrorMessage("Falha na conexão com o servidor");
   } finally {
     setLoading(false);
   }

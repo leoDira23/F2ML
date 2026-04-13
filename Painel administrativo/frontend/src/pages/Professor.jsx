@@ -33,7 +33,6 @@ import {
 } from "lucide-react";
 
 export default function Professor() {
-  
   const [activeTab,setActiveTab] = useState(1);
   const navigate = useNavigate();
   return (
@@ -128,7 +127,15 @@ export default function Professor() {
           </h4>
           <p>TREI - Seg/Qua 08:00-09:30</p>
         </div>
-        <Button variant={"blue"} > <PlayCircle></PlayCircle> Iniciar Aula</Button>
+        <Button
+  className="comecar"
+  variant="blue"
+ 
+>
+  <PlayCircle />
+
+  <p>{`Iniciar Aula`}</p>
+</Button>
       </Card>
 
       <MiddleNav className={`grid-3`}>

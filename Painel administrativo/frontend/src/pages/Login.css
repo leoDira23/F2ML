@@ -12,7 +12,6 @@
 html, body, #root { height: 100%; }
 body {
   margin: 0;
-  
   font-family: "Poppins", sans-serif;
   background: linear-gradient(180deg, var(--lilac-1) 0%, var(--lilac-2) 100%);
   -webkit-font-smoothing: antialiased;
