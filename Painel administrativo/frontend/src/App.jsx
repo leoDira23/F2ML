@@ -1,6 +1,6 @@
 // src/App.jsx
-import { Routes, Route } from "react-router-dom";
 import Admin from "./pages/Admin";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Coordenador from "./pages/Coordenador";
 import Professor from "./pages/Professor";
 import Login from "./pages/Login";
@@ -11,7 +11,7 @@ export default function App() {
   return (
     <AuthProvider>
       <Routes>
-        
+        <Route path="/" element={<Navigate to="/login" replace />} />
 
         <Route path="/login" element={<Login />} />
 
